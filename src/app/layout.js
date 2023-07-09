@@ -16,26 +16,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-<<<<<<< HEAD
-     
-      
-      <body className={inter.className}>
-        <Header/>
-        {children}
-
-        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"/>
-        
-        </body>
-         
-      
-=======
       <body className={inter.className}>
         <Header/>
         {children}
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"/>
         </body>
     
->>>>>>> 9e40c26ee7330da38d546ca9bb18c3b2ca38ed43
+
     </html>
   )
 }
