@@ -1,42 +1,38 @@
 'use client'
-import Link from 'next/link'
 import React from 'react'
-import Sidebar from './Sidebar'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import MenuIcon from '@mui/icons-material/Menu';
+import Carouel from './Carouel'
 
 const Header = () => {
-    const handlesidenav=()=>{
-      document.querySelector('.sidebar').style.display="flex"
-      
-    }
   return (
     <>
-      <div className="main-nav">
-        <div className='logo'>
-            <ul>
-                <li onClick={handlesidenav}>
-                  <MenuIcon color="primary" />
-                </li>
-                <li>
-                    <img src="https://res.cloudinary.com/dvcwh1gaq/image/upload/v1687768510/icon_y0sjwy.jpg" alt="logo image" />
-                </li>
-            </ul>
-        </div>
-        <div className="navbar">
-            <nav>
-                <ul>
-                    <li>
-                        <input type="search" placeholder='Search'/>
-                    </li>
-                    <li>
-                        <Link href="/"><ShoppingCartIcon color="primary"/></Link>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <nav className="navbar navbar-dark  fixed-top">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#">My Store</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="offcanvas offcanvas-end text-bg-dark sidebar" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div className="offcanvas-header">
+        <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">My Store</h5>
+        <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <Sidebar/>
+      <div className="offcanvas-body">
+        <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li className="nav-item">
+            <a className="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+        <form className="d-flex mt-3" role="search">
+          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+<Carouel/>
     </>
   )
 }
