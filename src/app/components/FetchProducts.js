@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { usestatevalue } from '../context/FetchContext'
+import { Usestatevalue } from '../context/FetchContext'
 import Rating from '@mui/material/Rating'
 
 const FetchProducts = () => {
