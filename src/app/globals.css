@@ -38,44 +38,46 @@
 
 .d-block{
     margin-top: 55px;
+    
 }
 
 .fetch-data{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: rgba(245,238,238,0.992);
 }
 
 .fetch-images{
-    height: 370px;
+    height: 380px;
     margin: 10px;
     flex-direction: column;
     width: 300px;
     display: flex;
-    border: 1px solid gray;
+    background-color: white;
 }
 
 .fetch-images:hover{
-    scale: 1.01;
+    scale: 1.05;
     transition:.4s ease-in-out ;
     box-shadow: 10px 10px 10px gray;
 }
 
 .images{
     display: flex;
-    justify-content:center;
-    margin-top: 10px;
+    justify-content: center;
 }
 
 .images img{
-    height: 25vh;
-    width: 13vw;
+    height: 150px;
+    width: 150px;
+    margin-top: 10px;
+    object-fit: contain;
 }
 
 .title{
    display: flex;
    justify-content: flex-start;
-   text-align: center;
    margin-top: 5px;
    margin-left: 10px;
    margin-right: 5px;
@@ -130,7 +132,7 @@
     display: flex;
     justify-content: center;
     width: 250px;
-    height: 30px;
+    height: 35px;
     margin: auto;
     background-color: blueviolet;
     text-align: center;
@@ -142,7 +144,7 @@
     color: black;
     font-size: 18px;
     font-weight: bold;
-    text-align: center;
+    margin: auto;
 }
 
 
