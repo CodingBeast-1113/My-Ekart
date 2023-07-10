@@ -34,4 +34,4 @@ export const FetchContext = ({children}) => {
   )
 }
 
-export const usestatevalue=()=>useContext(statecontext)
+export const Usestatevalue=()=>useContext(statecontext)

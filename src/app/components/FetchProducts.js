@@ -4,7 +4,7 @@ import { usestatevalue } from '../context/FetchContext'
 import Rating from '@mui/material/Rating'
 
 const FetchProducts = () => {
-    const {productstate,dispatch} =usestatevalue()
+    const {productstate,dispatch} =Usestatevalue()
     const [myproduct]=productstate.product
     console.log("My product",myproduct)
   return (
