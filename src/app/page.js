@@ -1,9 +1,10 @@
 import React from 'react'
+import FetchProducts from './components/FetchProducts'
 
 const page = () => {
   return (
     <>
-      <h1>Hello</h1>
+      
     </>
   )
 }

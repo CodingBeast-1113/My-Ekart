@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import Carouel from './Carouel'
+import FetchProducts from './FetchProducts'
 
 const Header = () => {
   return (
@@ -33,6 +34,7 @@ const Header = () => {
   </div>
 </nav>
 <Carouel/>
+<FetchProducts/>
     </>
   )
 }

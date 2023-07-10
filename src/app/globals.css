@@ -12,6 +12,8 @@
     background-color: blueviolet;
 }
 
+
+
 @media only screen and (max-width:700px){
     .offcanvas{
         width: 60vw !important;
@@ -28,8 +30,121 @@
     .carousel-control-next{
         margin-top: 55px;
     }
+    .images img{
+        height: 20vh;
+        width: 30vw !important;
+    }
 }
 
 .d-block{
     margin-top: 55px;
 }
+
+.fetch-data{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fetch-images{
+    height: 370px;
+    margin: 10px;
+    flex-direction: column;
+    width: 300px;
+    display: flex;
+    border: 1px solid gray;
+}
+
+.fetch-images:hover{
+    scale: 1.01;
+    transition:.4s ease-in-out ;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.images{
+    display: flex;
+    justify-content:center;
+    margin-top: 10px;
+}
+
+.images img{
+    height: 25vh;
+    width: 13vw;
+}
+
+.title{
+   display: flex;
+   justify-content: flex-start;
+   text-align: center;
+   margin-top: 5px;
+   margin-left: 10px;
+   margin-right: 5px;
+}
+
+.title h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-right: 5px;
+ }
+
+.description h3{
+    font-size: 14px;
+    font-weight: 400;
+    word-spacing: 1px;
+    color: black;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.rating{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-right: 5px;
+ }
+.price{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-right: 5px;
+ }
+
+.price h3{
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+.add-button{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 30px;
+    margin: auto;
+    background-color: blueviolet;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+
+.add-button a{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
