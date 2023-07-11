@@ -4,6 +4,9 @@ const reducer = (state,action) => {
         case "All_Product":{
             return {...state,product:[...state.product,action.payload]}
         }
+        case "ADD_TO_CART":{
+            return {...state,cart:[...state.cart,action.payload]}
+        }
     }
 }
 

@@ -1,14 +1,25 @@
 'use client'
 import React from 'react'
-import Carouel from './Carouel'
-import FetchProducts from './FetchProducts'
+import { Badge } from '@mui/material';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Usestatevalue } from '../context/FetchContext';
+import Link from 'next/link';
 
 const Header = () => {
+  const {productstate,dispatch}=Usestatevalue();
   return (
     <>
       <nav className="navbar navbar-dark  fixed-top">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">My Store</a>
+    <a className="navbar-brand d-flex" href="#">My Store
+    <div className='add-cart'>
+      <Link href="/cart">
+    <Badge badgeContent={productstate.cart.length} color="success">
+  <ShoppingCartIcon/>
+</Badge>
+</Link>
+    </div>
+    </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -33,8 +44,7 @@ const Header = () => {
     </div>
   </div>
 </nav>
-<Carouel/>
-<FetchProducts/>
+
     </>
   )
 }
