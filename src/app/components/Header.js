@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <nav className="navbar navbar-dark  fixed-top">
   <div className="container-fluid">
-    <a className="navbar-brand d-flex" href="#">My Store
+    <a className="navbar-brand d-flex" href="/">My Store
     <div className='add-cart'>
       <Link href="/cart">
     <Badge badgeContent={productstate.cart.length} color="success">
