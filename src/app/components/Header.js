@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <nav className="navbar navbar-dark  fixed-top">
   <div className="container-fluid">
-    <a className="navbar-brand d-flex" href="/">My Store
+    <Link className="navbar-brand d-flex" href="/">My Store
     <div className='add-cart'>
       <Link href="/cart">
     <Badge badgeContent={productstate.cart.length} color="success">
@@ -19,7 +19,7 @@ const Header = () => {
 </Badge>
 </Link>
     </div>
-    </a>
+    </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>

@@ -49,6 +49,7 @@
 }
 .fetch-data-cart{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 57px;
     flex-wrap: wrap;
