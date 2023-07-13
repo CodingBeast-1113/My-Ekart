@@ -9,11 +9,8 @@ const Header = () => {
 
   const {fiterstate,dispatchstate}=Usestatevalue()
   const [input,setInput]=useState(null)
-  const [name,setName]=useState(null)
   
-  console.log(name)
   const handlefilter=(e)=>{
-    setName(e.target.name)
     dispatchstate({type:"FILTER_CATEGORY",
     payload:e.target.name
   }
@@ -25,7 +22,6 @@ const Header = () => {
     payload:input
     
   })
-  //console.log(input)
   }
 
   const clearfilter=()=>{

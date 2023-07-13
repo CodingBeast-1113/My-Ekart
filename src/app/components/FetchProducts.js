@@ -7,8 +7,6 @@ import SingleProduct from './SingleProduct'
 const FetchProducts = () => {
     const {productstate,dispatch,filterstate,dispatchstate} =Usestatevalue()
     const [myproduct]=productstate.product
-    //console.log("My product",myproduct)
-    //console.log('Filter state', filterstate.filter);
 
 
     const array=()=>{
@@ -22,9 +20,7 @@ const FetchProducts = () => {
         return myproduct
       }
     }
-
-  
-
+    
   return (
     <>
     <div className="fetch-data" >

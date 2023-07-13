@@ -15,8 +15,6 @@ const SingleProduct = ({image,title,description,price,rating,id}) => {
             type:"ADD_TO_CART",
             payload:{id,image,title,price,description,rating}
         })
-        
-        //console.log(title)
     }
 
   return (
@@ -37,7 +35,7 @@ const SingleProduct = ({image,title,description,price,rating,id}) => {
           <h3>${price}</h3>
           </div>
           
-          {(productstate.cart.findIndex(i=>i.id===id)===-1)? <button onClick={cart} className='add-button'>Add to Cart</button>: <Link href='/cart' className='cart-add'><button className='cart-button'>Go to cart</button></Link>}
+          {(productstate.cart.findIndex(i=>i.id===id)===-1)? <button onClick={cart} className='add-button'>Add to Cart</button> : <Link href='/cart' className='cart-add'><button className='cart-button'>Go to cart</button></Link>}
           <Toaster />
     </>
   )
