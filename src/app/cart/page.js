@@ -3,6 +3,7 @@ import React from 'react'
 import { Usestatevalue } from '../context/FetchContext'
 import CartProduct from '../components/CartProduct';
 import Link from 'next/link';
+import toast, { Toaster } from 'react-hot-toast';
 
 const page = () => {
 
@@ -37,6 +38,7 @@ const page = () => {
       </div>
       </div>
 }
+<Toaster/>
     </>
   )
 }

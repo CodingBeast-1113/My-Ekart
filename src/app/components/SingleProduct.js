@@ -10,11 +10,12 @@ const SingleProduct = ({image,title,description,price,rating,id}) => {
     const {productstate,dispatch}=Usestatevalue();
 
     const cart=()=>{
-      toast.success("Added to cart")
+      
         dispatch({
             type:"ADD_TO_CART",
             payload:{id,image,title,price,description,rating}
         })
+        toast.success("Added to cart")
     }
 
   return (
@@ -36,7 +37,7 @@ const SingleProduct = ({image,title,description,price,rating,id}) => {
           </div>
           
           {(productstate.cart.findIndex(i=>i.id===id)===-1)? <button onClick={cart} className='add-button'>Add to Cart</button> : <Link href='/cart' className='cart-add'><button className='cart-button'>Go to cart</button></Link>}
-          <Toaster />
+
     </>
   )
 }

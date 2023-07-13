@@ -31,7 +31,7 @@ const CartProduct = ({id,image,title,price,description,rating}) => {
           <h3>${price}</h3>
           </div>
           <button onClick={remove} className='add-button'>Remove Item</button>
-          <Toaster />
+       
     </>
   )
 }

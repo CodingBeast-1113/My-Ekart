@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { Usestatevalue } from '../context/FetchContext'
-
+import toast, { Toaster } from 'react-hot-toast';
 import SingleProduct from './SingleProduct'
 
 const FetchProducts = () => {
@@ -20,7 +20,7 @@ const FetchProducts = () => {
         return myproduct
       }
     }
-    
+
   return (
     <>
     <div className="fetch-data" >
@@ -32,6 +32,7 @@ const FetchProducts = () => {
         ))
       }
       </div>
+      <Toaster/>
     </>
   )
 }
