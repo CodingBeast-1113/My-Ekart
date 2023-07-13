@@ -16,7 +16,7 @@ const SingleProduct = ({image,title,description,price,rating,id}) => {
             payload:{id,image,title,price,description,rating}
         })
         
-        console.log(title)
+        //console.log(title)
     }
 
   return (

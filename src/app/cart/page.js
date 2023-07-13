@@ -8,10 +8,10 @@ const page = () => {
 
     const {productstate,dispatch}=Usestatevalue();
     const cartproduct=productstate.cart
-    console.log("Cart product",cartproduct)
+    //console.log("Cart product",cartproduct)
 
     const subtotal=cartproduct.reduce((accumulator,currentvalue)=>accumulator+currentvalue.price,0)
-    console.log(subtotal)
+    //console.log(subtotal)
 
   return (
     <>

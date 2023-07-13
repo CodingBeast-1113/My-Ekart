@@ -9,7 +9,11 @@ export const FetchContext = ({children}) => {
     const [productstate,dispatch]=useReducer(reducer,{
         product:[],
         cart:[],
-        productDetail:[]
+        productDetail:{}
+    })
+    const [filterstate,dispatchstate]=useReducer(reducer,{
+        filter:'',
+        srchquery:''
     })
 
     useEffect(()=>{
@@ -20,14 +24,14 @@ export const FetchContext = ({children}) => {
                 type:"All_Product",
                 payload:fetchData
             })
-            console.log(fetchData)
+            //console.log(fetchData)
         }
         product_data()
     },[])
 
   return (
     <>
-     <statecontext.Provider value={{productstate,dispatch}}>
+     <statecontext.Provider value={{productstate,dispatch,filterstate,dispatchstate}}>
         {children}
      </statecontext.Provider>
     </>

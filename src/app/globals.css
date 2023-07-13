@@ -41,6 +41,10 @@
     
 }
 
+.mystore-logo{
+    font-weight:bold;
+}
+
 .fetch-data{
     display: flex;
     justify-content: center;
@@ -231,6 +235,8 @@
 .buy{
     width: 150px;
     border:none;
+    margin-top: 15px;
+    margin-bottom: 10px;
     outline:none;
     font-size: 17px;
     padding: 6px;

@@ -5,9 +5,23 @@ import { Usestatevalue } from '../context/FetchContext'
 import SingleProduct from './SingleProduct'
 
 const FetchProducts = () => {
-    const {productstate,dispatch} =Usestatevalue()
+    const {productstate,dispatch,filterstate,dispatchstate} =Usestatevalue()
     const [myproduct]=productstate.product
-    console.log("My product",myproduct)
+    //console.log("My product",myproduct)
+    //console.log('Filter state', filterstate.filter);
+
+
+    const array=()=>{
+      if (filterstate.srchquery!==""){
+        return myproduct?.filter(items=>items.title.toLowerCase().includes(filterstate.srchquery))
+      }
+      else if (filterstate.filter!==''){
+        return myproduct?.filter(item=>item.category===filterstate.filter)
+      }
+      else{
+        return myproduct
+      }
+    }
 
   
 
@@ -15,7 +29,7 @@ const FetchProducts = () => {
     <>
     <div className="fetch-data" >
       {
-        myproduct?.map((e)=>(
+        array()?.map((e)=>(
           <div key={e.id} className='fetch-images'>
             <SingleProduct image={e.image} title={e.title} description={e.description} price={e.price} rating={e.rating.rate} id={e.id}/>
         </div>

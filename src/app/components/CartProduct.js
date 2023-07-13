@@ -1,11 +1,17 @@
 import React from 'react'
 import Rating from '@mui/material/Rating'
 import toast, { Toaster } from 'react-hot-toast';
+import { Usestatevalue } from '../context/FetchContext';
 
 const CartProduct = ({id,image,title,price,description,rating}) => {
 
+  const {productstate,dispatch}=Usestatevalue()
+
   const remove=()=>{
-    console.log("removed")
+    toast.success("Removed from Cart")
+    dispatch({type:"Remove_Item",
+    payload:id
+  })
   }
   return (
     <>
