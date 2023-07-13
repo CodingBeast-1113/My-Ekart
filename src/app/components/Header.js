@@ -61,10 +61,10 @@ const Header = () => {
             <button className="nav-link active" aria-current="page" name='electronics' onClick={handlefilter}>Electonics</button>
           </li>
           <li className="nav-item">
-            <button className="nav-link" name="men's clothing" onClick={handlefilter}>Men's clothing</button>
+            <button className="nav-link" name="men's clothing" onClick={handlefilter}>Mens clothing</button>
           </li>
           <li className="nav-item">
-            <button className="nav-link" name="women's clothing" onClick={handlefilter}>Women's clothing</button>
+            <button className="nav-link" name="women's clothing" onClick={handlefilter}>Womens clothing</button>
           </li>
           <li className="nav-item">
             <button className="nav-link" name='jewelery' onClick={handlefilter}>Jewelery</button>
